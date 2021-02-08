@@ -16,6 +16,7 @@ buildscript {
 
     dependencies {
         classpath("gradle.plugin.com.google.cloud.artifactregistry", "artifactregistry-gradle-plugin", "2.1.1")
+        classpath("dev.trietsch", "some-codegen-tool-from-artifact-registry", "0.1.0")
     }
 }
 
