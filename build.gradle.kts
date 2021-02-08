@@ -1,7 +1,3 @@
-
-val location = "europe-west4"
-val googleCloudProject = "fill-out"
-
 plugins {
     kotlin("jvm") version "1.4.21"
     id("com.google.cloud.artifactregistry.gradle-plugin") version "2.1.1"
@@ -10,8 +6,8 @@ plugins {
 buildscript {
     repositories {
         mavenCentral()
-        maven("artifactregistry://$location-maven.pkg.dev/$googleCloudProject/snapshot")
-        maven("artifactregistry://$location-maven.pkg.dev/$googleCloudProject/release")
+        maven("artifactregistry://europe-west4-maven.pkg.dev/<fill-out>/snapshot")
+        maven("artifactregistry://europe-west4-maven.pkg.dev/<fill-out>/release")
     }
 
     dependencies {
@@ -25,8 +21,8 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
-    maven("artifactregistry://$location-maven.pkg.dev/$googleCloudProject/snapshot")
-    maven("artifactregistry://$location-maven.pkg.dev/$googleCloudProject/release")
+    maven("artifactregistry://europe-west4-maven.pkg.dev/<fill-out>/snapshot")
+    maven("artifactregistry://europe-west4-maven.pkg.dev/<fill-out>/release")
 }
 
 dependencies {
