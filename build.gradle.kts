@@ -6,7 +6,6 @@ plugins {
 buildscript {
     repositories {
         mavenCentral()
-        maven("artifactregistry://europe-west4-maven.pkg.dev/<fill-out>/snapshot")
         maven("artifactregistry://europe-west4-maven.pkg.dev/<fill-out>/release")
     }
 
@@ -21,7 +20,6 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
-    maven("artifactregistry://europe-west4-maven.pkg.dev/<fill-out>/snapshot")
     maven("artifactregistry://europe-west4-maven.pkg.dev/<fill-out>/release")
 }
 
